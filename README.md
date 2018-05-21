@@ -12,4 +12,4 @@ PythOn Simple Point Of Sale
 * Python3
 
 ## Licence
-Hi
+GNU Lesser General Public License v3.0
