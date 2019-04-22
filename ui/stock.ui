@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>725</width>
+    <height>405</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Stock Control</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#fcfcfc</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0" colspan="5">
+    <widget class="QTableWidget" name="itemtable">
+     <property name="editTriggers">
+      <set>QAbstractItemView::NoEditTriggers</set>
+     </property>
+     <property name="columnCount">
+      <number>5</number>
+     </property>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>130</number>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderStretchLastSection">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>Item Name</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Buy Price</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Sold Price</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Stock Left</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Stock Sold</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="title">
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Stock Control</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="helpbtn">
+     <property name="styleSheet">
+      <string notr="true">.QPushButton{
+
+
+  border: none;
+
+  padding: 5px 2.5px;
+}
+.QPushButton:hover
+{
+       border: 1px solid grey;
+    border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0" colspan="5">
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2">
+     <item>
+      <widget class="QPushButton" name="reportbtnB">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">.QPushButton{
+
+  padding: 10px 20px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: rgba(255,255,255,0.9);
+
+  background: #00a300;
+}
+.QPushButton:hover
+{
+        background-color: #009900;
+}
+.QPushButton:focus:pressed
+{
+    background-color: #008e00
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Generate Weekly Report</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="4">
+    <widget class="QPushButton" name="returnbtn">
+     <property name="styleSheet">
+      <string notr="true">.QPushButton{
+
+
+  border: none;
+
+  padding: 5px 2.5px;
+}
+.QPushButton:hover
+{
+       border: 1px solid grey;
+    border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <spacer name="horizontalSpacer_7">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Minimum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>1</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

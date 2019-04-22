@@ -1,0 +1,16 @@
+<H1 align="center">Receipt {}</H1>
+<b><h3>{}</h3></b>
+<h4>Your cashier is {} </h4>
+<h5>Thank you for purchasing</h5>
+<p>&nbsp;</p>
+<b><h3>Item Purchased:</h3></b>
+<p>Total: ${}</p>
+<table>
+<tbody>
+  <tr>
+    <th width="20%">Item ID</th>
+    <th width="20%">Item Name</th>
+    <th width="20%">Item Price</th>
+    <th width="20%">Item Quantity</th>
+    <th width="20%">Item Total</th>
+  </tr>

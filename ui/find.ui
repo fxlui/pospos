@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>findui</class>
+ <widget class="QWidget" name="findui">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>687</width>
+    <height>507</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Finding Item</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#fcfcfc</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="5">
+    <widget class="QPushButton" name="returnbtn">
+     <property name="styleSheet">
+      <string notr="true">.QPushButton{
+
+
+  border: none;
+
+  padding: 5px 2.5px;
+}
+.QPushButton:hover
+{
+       border: 1px solid grey;
+    border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="searchbar">
+     <property name="styleSheet">
+      <string notr="true">  
+  width: 100%;
+  height: 30%;
+  padding: 1px 0px;
+  border: 1px solid #b7b7b7;
+  border-radius: 5px;
+  background: rgba(252,252,252,1);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="placeholderText">
+      <string> Search...</string>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="title">
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Find Item</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="6">
+    <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="7,2">
+     <item>
+      <widget class="QLabel" name="cartlbl">
+       <property name="text">
+        <string>Currently XXX items</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="nextbutton">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">.QPushButton{
+
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: rgba(255,255,255,0.9);
+
+  background: #00a300;
+}
+.QPushButton:hover
+{
+        background-color: #009900;
+}
+.QPushButton:focus:pressed
+{
+    background-color: #008e00
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Review</string>
+       </property>
+       <property name="checkable">
+        <bool>false</bool>
+       </property>
+       <property name="flat">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="4">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Minimum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>1</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="3">
+    <widget class="QPushButton" name="helpbtn">
+     <property name="styleSheet">
+      <string notr="true">.QPushButton{
+
+
+  border: none;
+
+  padding: 5px 2.5px;
+}
+.QPushButton:hover
+{
+       border: 1px solid grey;
+    border-radius: 3px;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Minimum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>1</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="0" colspan="6">
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="styleSheet">
+      <string notr="true">QScrollBar {
+    width:7px;
+  border-radius: 30px;
+    background:rgba(0,0,0,0.2);
+}
+
+QScrollBar::thumb {
+
+    border-radius:5px;
+    background:rgba(0,0,0,0.2);
+}
+
+QScrollBar::thumb::hover {
+    background:rgba(0,0,0,0.4);
+}
+
+QScrollBar::thumb::window-inactive {
+    background:rgba(0,0,0,0.05);
+}</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>661</width>
+        <height>385</height>
+       </rect>
+      </property>
+      <widget class="QLabel" name="loadinglbl">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>160</y>
+         <width>191</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Loading...</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
