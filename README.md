@@ -1,5 +1,6 @@
 # pospos
 PythOn Simple Point Of Sale
+With SQLite database
 
 ## Functions
 * Point of Sales
