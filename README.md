@@ -4,8 +4,9 @@ PythOn Simple Point Of Sale
 ## Functions
 * Point of Sales
 * Inventory Control  
-* Report Generation  
+* Report/Receipt Generation  
 * Account Management  
+* HTML Help  
 
 ## Requirements
 * PyQt5
